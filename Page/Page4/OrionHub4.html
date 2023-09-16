@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="OrionHub4.css">
+    <link rel="icon" href="\Page\OrionHub.png">
+    <title>OrionHub</title>
+</head>
+<body>
+    <div class="center-div">
+        <h1 class="Titulo">Orion System</h1>
+        <h5 class="subtitulo">(Tired of the key system? Purchase Orion Hub premium to get a key-less expierence)</h5>
+        <h3 class="linkvertise">Enter your key into Orion Hub</h3>
+        <h3 class="linkvertise2">Your Key:</h3>
+        <input class="Texto" type="text" value="jK8Z0Qh7$n;4!~CFZ9'VL1dV[f5@zIUzOHr[p8_Vqe]1mJJzW7" id="textoACopiar">
+        <div class="button">
+            <a class="btn" target="_blank" id="botonCopiar" onclick="copiarTexto()">copy!</a>
+        </div>
+        <h5 class="discord">Join our discord at discord.gg/xP4hePpySW</h5>
+        <h5 class="welcome">Welcome to Orion Window!</h5>
+    </div>
+    <script>
+        const botonCopiar = document.getElementById("botonCopiar");
+        const textoACopiar = document.getElementById("textoACopiar");
+
+        botonCopiar.addEventListener("click", function() {
+            textoACopiar.select();
+            document.execCommand("copy");
+            window.getSelection().removeAllRanges();
+            botonCopiar.textContent = "¡Copiado!";
+            setTimeout(function() {
+                botonCopiar.textContent = "Copiar";
+            }, 1500);
+        });
+    </script>
+
+</body>
+
+
+
+
